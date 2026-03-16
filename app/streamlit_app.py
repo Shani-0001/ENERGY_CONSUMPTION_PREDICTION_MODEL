@@ -1,8 +1,12 @@
 import streamlit as st
-import joblib
 import pandas as pd
+import joblib
+import os
 
-model = joblib.load("../models/energy_model.pkl")
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+model_path = os.path.join(BASE_DIR, "models", "energy_model.pkl")
+
+model = joblib.load(model_path)
 
 st.title("Energy Consumption Prediction")
 
