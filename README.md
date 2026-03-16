@@ -1,74 +1,77 @@
-⚡ Energy Consumption Prediction using Machine Learning
+# ⚡ Energy Consumption Prediction using Machine Learning
 
 A Machine Learning regression project that predicts building energy consumption based on environmental and operational factors such as temperature, humidity, occupancy, HVAC usage, and lighting usage.
 
 The project also includes a Streamlit web application deployed on Streamlit Cloud for interactive predictions.
 
-🚀 Live Demo
+## 🚀 Live Demo
 
-Streamlit App:
+### Streamlit App:
 👉 https://energyconsumptionpredictionmodel-bgfso5vvorr7mjhp5yegeh.streamlit.app/
 
-📌 Project Overview
+## 📌 Project Overview
 
 Energy consumption forecasting helps improve energy efficiency, cost optimization, and sustainability in buildings.
 
 This project uses Machine Learning Regression (Random Forest) to estimate energy consumption using various input features.
 
-📊 Dataset Features
+## 📊 Dataset Features
 
 The dataset includes the following variables:
 
-Feature	Description
-Timestamp	Date and time of observation
-Temperature	Ambient temperature
-Humidity	Humidity level
-SquareFootage	Size of the building
-Occupancy	Number of occupants
-HVACUsage	HVAC system usage
-LightingUsage	Lighting energy usage
-RenewableEnergy	Renewable energy generation
-DayOfWeek	Day of the week
-Holiday	Whether it is a holiday
-EnergyConsumption	Target variable (energy usage)
-🧠 Machine Learning Model
+| Feature | Description |
+|--------|-------------|
+| Timestamp | Date and time of observation |
+| Temperature | Ambient temperature |
+| Humidity | Humidity level |
+| SquareFootage | Size of the building |
+| Occupancy | Number of occupants |
+| HVACUsage | HVAC system usage |
+| LightingUsage | Lighting energy usage |
+| RenewableEnergy | Renewable energy generation |
+| DayOfWeek | Day of the week |
+| Holiday | Whether it is a holiday |
+| EnergyConsumption | Target variable (energy usage) |
+## 🧠 Machine Learning Model
 
 Algorithm used:
 
-Random Forest Regressor
+### Random Forest Regressor
 
 Why Random Forest?
 
-Handles nonlinear relationships well
+- Handles nonlinear relationships well
 
-Robust to outliers
+- Robust to outliers
 
-Works well with tabular datasets
+- Works well with tabular datasets
 
-Requires minimal feature scaling
+- Requires minimal feature scaling
 
-🔎 Exploratory Data Analysis (EDA)
+## 🔎 Exploratory Data Analysis (EDA)
 
 EDA was performed to understand patterns in the dataset:
 
-Key analyses included:
+### Key analyses included:
 
-Energy consumption distribution
+- Energy consumption distribution
 
-Temperature vs energy consumption
+- Temperature vs energy consumption
 
-HVAC usage impact
+- HVAC usage impact
 
-Occupancy vs energy demand
+- Occupancy vs energy demand
 
-Correlation heatmap
+- Correlation heatmap
 
-Hourly energy consumption patterns
+- Hourly energy consumption patterns
 
-EDA notebook:
-
+### EDA notebook:
+```
 notebooks/eda_analysis.ipynb
-🏗 Project Structure
+```
+## 🏗 Project Structure
+```
 energy_consumption_prediction_model
 │
 ├── app
@@ -91,91 +94,94 @@ energy_consumption_prediction_model
 ├── requirements.txt
 ├── runtime.txt
 └── README.md
-⚙️ Installation
+```
+## ⚙️ Installation
 
-Clone the repository:
-
+### Clone the repository:
+```
 git clone https://github.com/yourusername/energy_consumption_prediction_model.git
 cd energy_consumption_prediction_model
-
+```
 Install dependencies:
-
+```
 pip install -r requirements.txt
-🧪 Train the Model
+```
+## 🧪 Train the Model
 
 Run the training script:
-
+```
 python src/train_model.py
-
+```
 This will generate:
-
+```
 models/energy_model.pkl
-💻 Run the Streamlit App
+```
+## 💻 Run the Streamlit App
 
 Start the application:
-
+```
 streamlit run app/streamlit_app.py
-
+```
 The app will open in your browser.
 
-🧾 Model Evaluation
+## 🧾 Model Evaluation
 
 Model performance metric used:
 
-R² Score
+### R² Score
 
 The model achieved a strong predictive performance for estimating building energy consumption.
 
-🛠 Technologies Used
+## 🛠 Technologies Used
 
-Python
+- Python
 
-Pandas
+- Pandas
 
-NumPy
+- NumPy
 
-Scikit-learn
+- Scikit-learn
 
-Matplotlib
+- Matplotlib
 
-Seaborn
+- Seaborn
 
-Joblib
+- Joblib
 
-Streamlit
+- Streamlit
 
-🌍 Deployment
+## 🌍 Deployment
 
 The application is deployed using:
 
-Streamlit Cloud
+### Streamlit Cloud
 
 Deployment steps:
 
-Push project to GitHub
+1. Push project to GitHub
 
-Connect repository to Streamlit Cloud
+2. Connect repository to Streamlit Cloud
 
-Select app/streamlit_app.py
+3. Select app/streamlit_app.py
 
-Deploy
+4. Deploy
 
-📈 Future Improvements
+## 📈 Future Improvements
 
-Potential improvements:
+### Potential improvements:
 
-Hyperparameter tuning
+- Hyperparameter tuning
 
-Advanced feature engineering
+- Advanced feature engineering
 
-XGBoost / LightGBM models
+- XGBoost / LightGBM models
 
-Real-time data integration
+- Real-time data integration
 
-Dashboard visualization
+- Dashboard visualization
 
-👨‍💻 Author
+## 👨‍💻 Author
 
-Shani Yadav
+### Shani Yadav
 
 Machine Learning Enthusiast | Data Science Learner
